@@ -1,0 +1,195 @@
+Running `bundle install --verbose` with bundler 1.17.3
+Found no changes, using resolution from the lockfile
+The definition is missing ["nokogiri-1.6.6.2", "rspec-support-3.4.1", "rspec-core-3.4.4", "rspec-expectations-3.4.0", "rspec-mocks-3.4.1", "rspec-3.4.0"]
+HTTP GET https://index.rubygems.org/versions
+HTTP 206 Partial Content https://index.rubygems.org/versions
+Fetching gem metadata from https://rubygems.org/
+Looking up gems ["coderay", "diff-lcs", "method_source", "mini_portile", "nokogiri", "slop", "pry", "rspec-support", "rspec-core", "rspec-expectations", "rspec-mocks", "rspec"]
+Looking up gems ["ruby_parser", "win32console", "yard", "spoon", "hoe", "racc", "rake-compiler", "rexical", "tenderlove-frex", "weakling", "mini_portile2", "pkg-config", "cucumber", "spicycode-rcov", "syntax"]
+Looking up gems ["ffi", "rake", "rubyforge", "RubyInline", "gemcutter", "builder", "polyglot", "term-ansicolor", "treetop", "json", "json_pure", "gherkin", "multi_json", "multi_test", "cucumber-core", "gherkin3", "cucumber-wire", "event-bus", "cucumber-expressions", "cucumber-formatter-dots", "ParseTree", "sexp_processor", "erubis"]
+Looking up gems ["net-scp", "backports", "cucumber-tag_expressions", "SexpProcessor", "bones", "cucumber-messages", "os", "c21e", "abstract", "ZenTest", "facets", "trollop", "spruz", "tins"]
+Looking up gems ["little-plugger", "loquacious", "bones-extras", "bones-git", "rdoc", "google-protobuf", "curses", "net-ssh"]
+Looking up gems ["bones-rcov", "bones-rspec", "bones-rubyforge", "bones-zentest", "git", "echoe", "needle", "jruby-pageant", "bcrypt_pbkdf", "rbnacl", "rbnacl-libsodium", "minitest"]
+Looking up gems ["rcov", "highline", "allison"]
+Looking up gems ["termios"]
+Using bundler 1.17.3
+0:  bundler (1.17.3) from /Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/specifications/default/bundler-1.17.3.gemspec
+Using coderay 1.1.1
+0:  coderay (1.1.1) from /Users/taillet/.rvm/gems/ruby-2.3.3/specifications/coderay-1.1.1.gemspec
+Using diff-lcs 1.2.5
+0:  diff-lcs (1.2.5) from /Users/taillet/.rvm/gems/ruby-2.3.3/specifications/diff-lcs-1.2.5.gemspec
+Using method_source 0.8.2
+0:  method_source (0.8.2) from /Users/taillet/.rvm/gems/ruby-2.3.3/specifications/method_source-0.8.2.gemspec
+Using mini_portile 0.6.2
+0:  mini_portile (0.6.2) from /Users/taillet/.rvm/gems/ruby-2.3.3/specifications/mini_portile-0.6.2.gemspec
+Fetching nokogiri 1.6.6.2
+Installing nokogiri 1.6.6.2 with native extensions
+Building native extensions with: '--use-system-libraries --with-xml2-dir=“/usr/local/opt/libxml2”'
+This could take a while...
+Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/Users/taillet/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.6.6.2/ext/nokogiri
+/Users/taillet/.rvm/rubies/ruby-2.3.3/bin/ruby -I
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0 -r
+./siteconf20190114-11964-stvbor.rb extconf.rb --use-system-libraries\
+--with-xml2-dir\=\“/usr/local/opt/libxml2\”
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts
+-Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+-----
+The file "/usr/include/iconv.h" is missing in your build environment,
+which means you haven't installed Xcode Command Line Tools properly.
+
+To install Command Line Tools, try running `xcode-select --install` on
+terminal and follow the instructions.  If it fails, open Xcode.app,
+select from the menu "Xcode" - "Open Developer Tool" - "More Developer
+Tools" to open the developer site, download the installer for your OS
+version and run it.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/Users/taillet/.rvm/rubies/ruby-2.3.3/bin/$(RUBY_BASE_NAME)
+	--help
+	--clean
+	--use-system-libraries
+	--enable-static
+	--disable-static
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--enable-cross-build
+	--disable-cross-build
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/Users/taillet/.rvm/gems/ruby-2.3.3/extensions/x86_64-darwin-18/2.3.0/nokogiri-1.6.6.2/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/Users/taillet/.rvm/gems/ruby-2.3.3/gems/nokogiri-1.6.6.2 for inspection.
+Results logged to
+/Users/taillet/.rvm/gems/ruby-2.3.3/extensions/x86_64-darwin-18/2.3.0/nokogiri-1.6.6.2/gem_make.out
+
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/builder.rb:99:in
+`run'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/tempfile.rb:295:in `open'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in
+`mon_synchronize'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/builder.rb:226:in
+`each'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/installer.rb:813:in
+`build_extensions'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/rubygems_gem_installer.rb:30:in
+`build_extensions'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/rubygems/installer.rb:320:in
+`install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/source/rubygems.rb:155:in
+`block in install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/rubygems_integration.rb:221:in
+`preserve_paths'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/source/rubygems.rb:144:in
+`install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/gem_installer.rb:63:in
+`install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/gem_installer.rb:68:in
+`block in install_with_settings'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/rubygems_integration.rb:800:in
+`install_with_build_args'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/gem_installer.rb:68:in
+`install_with_settings'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/parallel_installer.rb:164:in
+`do_install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/parallel_installer.rb:148:in
+`install_serially'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/parallel_installer.rb:103:in
+`call'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer/parallel_installer.rb:78:in
+`call'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer.rb:289:in
+`install_in_parallel'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer.rb:197:in
+`install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer.rb:92:in
+`block in run'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/process_lock.rb:12:in
+`block in lock'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/process_lock.rb:9:in
+`open'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/process_lock.rb:9:in
+`lock'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer.rb:73:in
+`run'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/installer.rb:25:in
+`install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/cli/install.rb:65:in
+`run'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/cli.rb:235:in
+`block in install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/settings.rb:143:in
+`temporary'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/cli.rb:234:in
+`install'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/vendor/thor/lib/thor/command.rb:27:in
+`run'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/vendor/thor/lib/thor/invocation.rb:126:in
+`invoke_command'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/vendor/thor/lib/thor.rb:387:in
+`dispatch'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/cli.rb:27:in
+`dispatch'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/vendor/thor/lib/thor/base.rb:466:in
+`start'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/cli.rb:18:in
+`start'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.17.3/exe/bundle:30:in
+`block in <top (required)>'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/site_ruby/2.3.0/bundler/friendly_errors.rb:124:in
+`with_friendly_errors'
+/Users/taillet/.rvm/rubies/ruby-2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.17.3/exe/bundle:22:in
+`<top (required)>'
+  /Users/taillet/.rvm/gems/ruby-2.3.3/bin/bundle:23:in `load'
+  /Users/taillet/.rvm/gems/ruby-2.3.3/bin/bundle:23:in `<main>'
+  /Users/taillet/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:24:in `eval'
+  /Users/taillet/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:24:in `<main>'
+
+An error occurred while installing nokogiri (1.6.6.2), and Bundler cannot
+continue.
+Make sure that `gem install nokogiri -v '1.6.6.2' --source
+'https://rubygems.org/'` succeeds before bundling.
+
+In Gemfile:
+  nokogiri
